@@ -810,13 +810,22 @@ header .header_main {
   }
   /* header  */
   header .header_main{
-    padding: 0 0px 0 130px;
+    padding: 0 0px 0 90px;
+  }
+  header .header_main .menu{
+    justify-content: start;
   }
   .header_left .menu_main ul li, .header_right .search ul li{
     padding: 5px;
   }
   .header_area .header_main .header_left .logo{
-    width: 140px;
+    width: 100px;
+  }
+   header .header_area{
+    height: 80px;
+  }
+  header .header_area.sticky{
+    height: 100px;
   }
   .header_area .header_main .header_left .logo img{
     width: 100%;
@@ -828,7 +837,10 @@ header .header_main {
     font-size: 10px;
   }
   .header_right .search form input{
-    width: 180px;
+    width: 140px;
+  }
+  ul{
+    padding: 0;
   }
   .card_stor img {
     width: 18px;
