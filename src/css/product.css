@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #1d2547;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-weight: 900;
+}
+.carousel_product .carousel_main {
+  height: 370px;
+}
+.carousel_product .carousel_main::before {
+  height: 30%;
+}
+.carousel_product .carousel_main .carousel_bg {
+  height: 300px;
+  background-position: right 55% bottom 25%;
+}
+.carousel_pro_cap {
+  position: absolute;
+  left: 120px;
+  top: 100px;
+}
+.carousel_pro_cap h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.carousel_pro_cap ul {
+    margin: 0;
+    padding: 0;
+}
+.carousel_pro_cap ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+.carousel_pro_cap ul li a,.carousel_pro_cap ul li {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.heading_custom_pro h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .heading_custom_pro p {
+    color: #7f85a8;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+  }

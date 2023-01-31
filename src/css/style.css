@@ -257,7 +257,7 @@ header .header_main {
   border-radius: 5px;
   box-shadow: 0px 0px 7px 0px;
   border-top: 3px solid #fd8f5f;
-  animation: myFadeInUp 1s;
+  animation: myFadeInUp 0.5s;
 }
 .header_left .menu_main ul li .submenu::before {
   content: "";
@@ -775,7 +775,7 @@ header .header_main {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 575.9px) {
+@media only screen and (max-width: 767.9px) {
   /* general custom  */
   *{
     font-size: 10px;
@@ -936,6 +936,14 @@ header .header_main {
     font-size: 10px;
   }
 }
+.rotate{
+  transition: .5s;
+  cursor: pointer;
+}
+.rotate:hover{
+  animation: rotate 1.25s;
+}
+
 /* animation  */
 @keyframes myFadeInDown {
   from {
@@ -947,18 +955,19 @@ header .header_main {
 }
 @keyframes myFadeInUp {
   from {
-    transform: translate3d(0, 60px, 0);
+    transform: translateY(40%);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 @keyframes myFadeInUp1 {
   from {
-    transform: translate3d(0, 80px, 0);
+    /* transform: translate3d(0, 80px, 0); */
+    transform: translateY(50%);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 @keyframes myFade {
@@ -969,3 +978,13 @@ header .header_main {
     opacity: 1;
   }
 }
+@keyframes rotate{
+  from {
+    transform: rotate(180deg);
+  }to{
+    transform: rotate(0deg);
+  }
+}
+
+
+
